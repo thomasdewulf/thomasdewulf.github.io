@@ -38,6 +38,8 @@ jobs:
         run: hugo --minify
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+        with:
+          path: "public/"
 
   deploy:
     environment:
@@ -50,5 +52,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-        with:
-          artifact_name: public
