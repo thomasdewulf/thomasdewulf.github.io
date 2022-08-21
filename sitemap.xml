@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://thomasdewulf.dev/archives/</loc>
+  </url><url>
+    <loc>https://thomasdewulf.dev/categories/</loc>
+  </url><url>
+    <loc>https://thomasdewulf.dev/posts/hello-world/</loc>
+  </url><url>
+    <loc>https://thomasdewulf.dev/posts/</loc>
+  </url><url>
+    <loc>https://thomasdewulf.dev/search/</loc>
+  </url><url>
+    <loc>https://thomasdewulf.dev/series/</loc>
+  </url><url>
+    <loc>https://thomasdewulf.dev/tags/</loc>
+  </url><url>
+    <loc>https://thomasdewulf.dev/</loc>
+  </url>
+</urlset>
