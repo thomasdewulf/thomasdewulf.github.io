@@ -45,7 +45,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 ```
 
-## 3. Adapt model binding
+## 4. Adapt model binding
 
 At this point, if you make an API request via the Swagger UI, it will send the string value of the Enum in the query or body (depending on how your endpoint works). But, the Json conversion expects an integer. To make strings work, you have to tell the JsonSerializet that it should expect a string. Luckily, this is already built in.
 
@@ -64,4 +64,4 @@ builder.Services.AddControllers(/*Other config*/)).AddJsonOptions(options =>
 });
 ```
 
-## 4. That's it!
+## 5. That's it!
