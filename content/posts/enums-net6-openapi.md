@@ -34,7 +34,18 @@ This piece of code:
 - Clears the current Enum definitions
 - Loops over the enum and re-adds the name to the Schema. In `new OpenApiString()`, you can do anything you want. You just have to make sure that model binding can work with it.
 
-## 2. Adapt model binding
+## 3. Add the schema filter to the Swagger config
+
+In `Program.cs`, there should be a call to `AddSwaggerGen()`. Replace it with the following:
+
+```c#
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SchemaFilter<EnumSchemaFilter>();   
+});
+```
+
+## 3. Adapt model binding
 
 At this point, if you make an API request via the Swagger UI, it will send the string value of the Enum in the query or body (depending on how your endpoint works). But, the Json conversion expects an integer. To make strings work, you have to tell the JsonSerializet that it should expect a string. Luckily, this is already built in.
 
@@ -53,4 +64,4 @@ builder.Services.AddControllers(/*Other config*/)).AddJsonOptions(options =>
 });
 ```
 
-## 3. That's it!
+## 4. That's it!
