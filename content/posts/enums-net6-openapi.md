@@ -1,5 +1,6 @@
 ---
 title: User friendly enums in Swagger UI with .NET 6
+date: 2022-09-08
 ---
 
 When using enums in a .NET API that has Swagger UI (with **Swashbuckle**), they are shown as numbers by default. I found this not very user friendly as you'd need insight in what the number represents. After some googling, I found this solution:
